@@ -1,7 +1,7 @@
 {
   "name": "demo06-main-renderer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo06 Google IO Extended Cuiabá 2017",
   "main": "src/main.js",
   "dependencies": {
     "electron-prebuilt": "^1.4.13"
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Google IO", "Google IO Extended","Google IO Extended Cuiabá","Cuiabá","DevMT"],
+  "author": "Victor Hugo Souza Nunes",
   "license": "ISC"
 }
