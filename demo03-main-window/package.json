@@ -1,0 +1,15 @@
+{
+  "name": "demo03-main-window",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["Google IO", "Google IO Extended","Google IO Extended Cuiabá","Cuiabá","DevMT"],
+  "author": "Victor Hugo Souza Nuens",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}
