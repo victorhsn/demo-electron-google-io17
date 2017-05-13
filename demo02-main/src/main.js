@@ -4,11 +4,10 @@ const BrowserWindow = electron.BrowserWindow;
 
 app.on('ready', () => {
 
-    //console.log("Vualá");
-
     new BrowserWindow({
         width: 400,
-        height: 500
+        height: 500,
+        title: 'Google I/O Extended Cuiabá 2017'
     })
 
 })

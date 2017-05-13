@@ -11,7 +11,8 @@ app.on('ready', () => {
 
     windowBrowser = new BrowserWindow({
         width: 400,
-        height: 500
+        height: 500,
+        title: 'Google I/O Extended Cuiabá 2017'
     });
 
     windowBrowser.loadURL(`file://${__dirname}/index.html`);

@@ -11,7 +11,8 @@ app.on('ready', () => {
 
     windowBrowser = new BrowserWindow({
         width: 650,
-        height: 300
+        height: 300,
+        title: 'Google I/O Extended Cuiabá 2017'
     })
 
     windowBrowser.loadURL(`file://${__dirname}/index.html`);
@@ -26,5 +27,5 @@ ipc.on('send-message', (event, arg) => {
 })
 
 ipc.on('messagetorenderer', (event, arg) => {
-  event.sender.send('messagefrommain', '<h1>Google Lover</h1>')
+  event.sender.send('messagefrommain', '<h1>Xablau!!!</h1>')
 })

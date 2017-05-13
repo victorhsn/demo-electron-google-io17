@@ -8,7 +8,8 @@ app.on('ready', () => {
 
     windowBrowser = new BrowserWindow({
         width: 500,
-        height: 400
+        height: 400,
+        title: 'Google I/O Extended Cuiabá 2017'
     })
 
 
