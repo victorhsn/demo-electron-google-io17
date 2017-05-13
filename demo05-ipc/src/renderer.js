@@ -11,7 +11,7 @@ document.getElementById('sendrenderer').addEventListener('click', () => {
 
 ipc.on('messagefrommain', (event, arg) => {
 
-  document.getElementById('googlelover').innerHTML = arg;
+  document.getElementById('message').textContent = arg;
   
 })
 

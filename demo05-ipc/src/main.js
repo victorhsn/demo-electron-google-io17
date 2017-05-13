@@ -5,14 +5,15 @@ const ipc = electron.ipcMain;
 
 let windowBrowser;
 
-electron.shell.openExternal('http://github.com');
+let message = ['<o/','=D','Xablau!','I am main!','Manda Nudes!'];
 
 app.on('ready', () => {
 
     windowBrowser = new BrowserWindow({
         width: 650,
         height: 300,
-        title: 'Google I/O Extended Cuiabá 2017'
+        title: 'Google I/O Extended Cuiabá 2017',
+        backgroundColor: '#5499C7'
     })
 
     windowBrowser.loadURL(`file://${__dirname}/index.html`);
@@ -27,5 +28,13 @@ ipc.on('send-message', (event, arg) => {
 })
 
 ipc.on('messagetorenderer', (event, arg) => {
-  event.sender.send('messagefrommain', '<h1>Xablau!!!</h1>')
+ 
+ let msg;
+
+  message.forEach(function(el) {
+      msg = message[Math.floor(Math.random() * message.length)];
+  });
+
+  event.sender.send('messagefrommain',msg);
+
 })

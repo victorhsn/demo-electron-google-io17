@@ -3,7 +3,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 let mainWindow;
-let otherWindow;
 
 app.on('ready', () => {
 
@@ -13,8 +12,8 @@ app.on('ready', () => {
         title: 'Google IO/Extended Cuiabá 2017',
         backgroundColor: '#DAF7A6',
         center: true,
-        //resizable: false
-        //movable: false,
+        resizable: false,
+        movable: false,
 
     })
 

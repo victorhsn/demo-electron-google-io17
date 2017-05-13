@@ -1,0 +1,35 @@
+h1 {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message {
+
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #A04000;
+    margin-top: 50px;
+
+}
+
+.btnSend {
+   margin-left: 120px;
+   margin-top: 30px;
+}
+
+.btn {
+    padding: 20px 30px;
+    border: 0;
+    font-size: 20px;
+    background-color: #28B463;
+    border-radius: 4px;
+    color: #FFFFFF;
+}

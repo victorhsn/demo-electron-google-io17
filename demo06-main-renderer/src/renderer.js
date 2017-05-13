@@ -1,7 +1,7 @@
 const electron = require('electron');
 const ipc = electron.ipcRenderer;
 
-document.getElementById('push').addEventListener('click', () => {
+document.getElementById('press').addEventListener('click', () => {
 
     ipc.send('countdown-start');
 
