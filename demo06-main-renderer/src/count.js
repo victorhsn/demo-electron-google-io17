@@ -2,13 +2,10 @@ module.exports = function countdown(tick) {
     
    let count = 5;
 
-   let timer = setInterval(() => {
-        
-        tick(count--);
+   let time = setInterval(() => {
 
-        console.log('count',count);
-        
+        tick(count--);
         if(count === -1)
-            clearInterval(timer);
+            clearInterval(time);
     }, 1000)
 }
