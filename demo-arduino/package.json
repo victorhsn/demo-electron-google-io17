@@ -1,0 +1,19 @@
+{
+  "name": "demo-arduino-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-rebuild": "^1.5.11"
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "johnny-five": "^0.10.13"
+  }
+}
