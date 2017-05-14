@@ -7,16 +7,10 @@ util.inherits(ArduinoStream, Readable)
 
 function ArduinoStream(opt) {  
 
-  console.log("STREAM OPT", opt);
   Readable.call(this, opt)
-
 }
 
-ArduinoStream.prototype._read = function(data) {
-
-  console.log(data);
-}  
-
+ArduinoStream.prototype._read = function(data) { }  
 
 process.__defineGetter__('stdin', function() {  
 
@@ -30,17 +24,33 @@ process.__defineGetter__('stdin', function() {
 });
 
 let board = new five.Board();
+let btnOn = document.getElementById('btnOn');
+let btnOff = document.getElementById('btnOff');
+let imagestatus = document.getElementById('img-status');
+
+btnOff.disabled = true;
+document.body.style.backgroundColor = '#000000';
 
 board.on('ready', function() {
   
     var led = new five.Led(13);
 
-    document.getElementById('ligar').addEventListener('click', () => {
-
+    btnOn.addEventListener('click', () => {
+  
       led.on();
-    });
+      
+      btnOn.disabled = true;
+      btnOff.disabled = false;
+      imagestatus.style.backgroundImage = "url('img/light-bulb.jpg')"
 
-    document.getElementById('desligar').addEventListener('click', () => {
+   });
+
+   btnOff.addEventListener('click', () => {
+     
       led.off();
-    });
+      btnOn.disabled = false;
+      btnOff.disabled = true;
+      imagestatus.style.backgroundImage = "url('img/ghost-pacman.png')";
+  
+   })
 });

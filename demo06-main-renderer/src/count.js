@@ -7,5 +7,6 @@ module.exports = function countdown(tick) {
         tick(count--);
         if(count === -1)
             clearInterval(time);
+            
     }, 1000)
 }
