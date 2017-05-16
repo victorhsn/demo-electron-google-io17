@@ -9,6 +9,7 @@ app.on('ready', () => {
     windowBrowser = new BrowserWindow({
         width: 500,
         height: 400,
+        backgroundColor: '#EC7063',
         title: 'Google I/O Extended Cuiabá 2017'
     })
 
