@@ -3,8 +3,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const Menu = electron.Menu;
 
-let windowBrowser;
-let windowAbout;
+let windowGdg;
 
 app.on('ready', () => {
 
@@ -20,12 +19,12 @@ app.on('ready', () => {
                     label: 'Google I/O',
                     click: () => {
 
-                        windowAbout = new BrowserWindow({
+                        windowGdg = new BrowserWindow({
                             width: 500,
                             height: 600
                         })
 
-                        windowAbout.loadURL(`file://${__dirname}/index.html`)
+                        windowGdg.loadURL(`file://${__dirname}/index.html`)
 
                     }
                 },
@@ -37,9 +36,24 @@ app.on('ready', () => {
                 {
                     label: 'Quit',
                     click: () => {
-
                         app.quit();
-                    }
+                    },
+                    accelerator: 'Cmd+Q'
+                },
+
+                {
+                    label: 'Menu 03',
+                    submenu: [
+                        {
+                            label: 'Menu03-1'
+                        },
+                        {
+                            label: 'Menu03-2'
+                        },
+                        {
+                            label: 'Menu03-3'
+                        }
+                    ]
                 }
 
             ]
