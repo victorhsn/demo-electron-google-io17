@@ -33,7 +33,16 @@ document.body.style.backgroundColor = '#000000';
 
 board.on('ready', function() {
   
-    var led = new five.Led(13);
+
+    var array = new five.Leds([3,5,6]);
+    btnOn.addEventListener('click', () => {
+
+      array.pulse();
+
+    });
+
+    
+    /*var led = new five.Led(13);
 
     btnOn.addEventListener('click', () => {
   
@@ -52,5 +61,5 @@ board.on('ready', function() {
       btnOff.disabled = true;
       imagestatus.style.backgroundImage = "url('img/ghost-pacman.png')";
   
-   })
+   })*/
 });
