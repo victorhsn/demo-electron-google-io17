@@ -11,7 +11,7 @@ app.on('ready', () => {
 
     const tray = new Tray(path.join('src','gdg-icon-16.png'));
 
-    const context = Menu.buildFromTemplate([
+    let context = Menu.buildFromTemplate([
         {
             label: 'Google I/O',
             click: () => {

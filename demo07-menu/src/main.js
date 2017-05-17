@@ -14,8 +14,7 @@ app.on('ready', () => {
     const template = [
         {
             label: name,
-            submenu: [
-                {
+            submenu: [{
                     label: 'Google I/O',
                     click: () => {
 
