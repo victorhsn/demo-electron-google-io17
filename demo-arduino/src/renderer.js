@@ -26,9 +26,9 @@ process.__defineGetter__('stdin', function() {
 let board = new five.Board();
 let btnOn = document.getElementById('btnOn');
 let btnOff = document.getElementById('btnOff');
-let imagestatus = document.getElementById('img-status');
 
-btnOff.disabled = true;
+
+
 document.body.style.backgroundColor = '#000000';
 
 board.on('ready', function() {
@@ -41,25 +41,9 @@ board.on('ready', function() {
 
     });
 
-    
-    /*var led = new five.Led(13);
-
-    btnOn.addEventListener('click', () => {
-  
-      led.on();
-      
-      btnOn.disabled = true;
-      btnOff.disabled = false;
-      imagestatus.style.backgroundImage = "url('img/light-bulb.jpg')"
-
-   });
-
    btnOff.addEventListener('click', () => {
      
-      led.off();
-      btnOn.disabled = false;
-      btnOff.disabled = true;
-      imagestatus.style.backgroundImage = "url('img/ghost-pacman.png')";
+      array.stop().off();
   
-   })*/
+   })
 });
