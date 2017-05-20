@@ -1,0 +1,21 @@
+{
+  "name": "demo10-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build -m"
+
+  },
+  "build": {
+    "productName": "GDG Cuiaba"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}
