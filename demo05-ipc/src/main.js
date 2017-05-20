@@ -28,7 +28,7 @@ ipc.on('send-message', (event, arg) => {
 })
 
 ipc.on('messagetorenderer', (event, arg) => {
- 
+
  let msg;
 
   message.forEach(function(el) {

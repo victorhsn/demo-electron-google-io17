@@ -17,9 +17,11 @@ app.on('ready', () => {
             click: () => {
 
                 windowGdg = new BrowserWindow({
-                    width: 400,
-                    height: 500
+                    width: 600,
+                    height: 255
                 })
+
+                windowGdg.loadURL(`file://${__dirname}/index.html`)
             }
         }
     ])

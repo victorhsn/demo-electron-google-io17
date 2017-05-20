@@ -14,4 +14,3 @@ ipc.on('messagefrommain', (event, arg) => {
   document.getElementById('message').textContent = arg;
   
 })
-
